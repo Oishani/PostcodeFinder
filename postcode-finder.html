@@ -7,17 +7,44 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <style type="text/css">
+      html {
+        background: url(bg.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        }
+        body{
+          background: none;
+        }
+        .container{
+          text-align: center;
+          margin-top: 100px;
+          width: 450px;
+        }
+        #heading{
+          padding: 20px;
+          background: red;
+          border-radius: 25px;
+          border: 2px solid black;
+        }
+        #format{
+          color: white;
+          font-weight: bolder;
+          font-size: 20px;
+        }
+        </style>
     <title>Postcode Finder</title>
   </head>
   <body>
     <div class="container">
-    <h1>Postcode Finder</h1>
-  <p>Enter a partial address to get the postcode.</p>
+    <h1 id="heading">Postcode Finder</h1>
+  <p id="format">Enter a partial address to get the postcode.</p>
   <div id="message"></div>
   <form>
   <div class="form-group">
-    <label for="address">Address</label>
+    <label for="address"></label>
     <input type="text" class="form-control" id="address" placeholder="Enter partial address"></div>
     <button class="btn btn-primary" id="find-postcode">Submit</button>
 </form>
